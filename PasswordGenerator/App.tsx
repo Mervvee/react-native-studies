@@ -95,7 +95,7 @@ export default function App() {
       <SafeAreaView style={{ ...styles.appContainer, margin: 10 }}>
         <View style={styles.formContainer}>
           <Text style={{ fontSize: 30, fontWeight: 'bold', margin: 10 }}>Password Generator</Text>
-          <Formik
+          <Formik 
             initialValues={{ passwordLength: '' }}
             validationSchema={PasswordSchema}
             onSubmit={values => {
